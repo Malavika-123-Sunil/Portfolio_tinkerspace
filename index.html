@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malavika Sunil - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <div class="theme-icon">🌙</div>
+    </div>
+
+    <!-- Floating Background Elements -->
+    <div class="floating-elements">
+        <div class="star star-1">✨</div>
+        <div class="star star-2">⭐</div>
+        <div class="star star-3">💫</div>
+        <div class="star star-4">🌟</div>
+        <div class="star star-5">✨</div>
+        <div class="star star-6">⭐</div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-name">
+                <span class="sparkle">✨</span>
+                Malavika Sunil
+                <span class="sparkle">✨</span>
+            </h1>
+            <p class="hero-subtitle">Creative Developer & Tech Enthusiast</p>
+            <button class="explore-btn" onclick="scrollToNext()">
+                <span class="btn-text">💫 Come, Let's Explore!</span>
+                <div class="btn-ripple"></div>
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Profile Picture Section -->
+    <section id="profile" class="profile-section">
+        <div class="profile-container">
+            <div class="profile-image-wrapper">
+                <img src="public/WhatsApp Image 2025-06-21 at 10.45.04.jpeg" alt="Malavika Sunil" class="profile-image">
+                <div class="image-glow"></div>
+            </div>
+            <p class="profile-welcome">Welcome to my creative corner of the internet!</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Code Chronicles 🚀</h2>
+            
+            <!-- Project Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                <button class="filter-btn" data-filter="react">React</button>
+                <button class="filter-btn" data-filter="firebase">Firebase</button>
+                <button class="filter-btn" data-filter="html">HTML/CSS</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Loading projects...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualifications Section -->
+    <section id="qualifications" class="qualifications-section">
+        <div class="container">
+            <h2 class="section-title">My Learning Path 📚</h2>
+            
+            <!-- Schooling Subsection -->
+            <div class="education-subsection">
+                <h3 class="subsection-title">🏫 Schooling</h3>
+                <div class="schools-grid">
+                    <div class="school-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="school-image">
+                            <img src="https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Kendriya Vidyalaya Suratgarh">
+                            <div class="school-overlay">
+                                <h4>Kendriya Vidyalaya Suratgarh</h4>
+                                <p>Foundation years of learning and growth</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="school-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="school-image">
+                            <img src="https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=400" alt="KV Adoor">
+                            <div class="school-overlay">
+                                <h4>KV Adoor</h4>
+                                <p>Developing academic excellence and character</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="school-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="school-image">
+                            <img src="https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg?auto=compress&cs=tinysrgb&w=400" alt="KV Pangode">
+                            <div class="school-overlay">
+                                <h4>KV Pangode</h4>
+                                <p>Completing secondary education with distinction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- College Subsection -->
+            <div class="education-subsection">
+                <h3 class="subsection-title">🎓 College</h3>
+                <div class="college-card" data-aos="fade-up">
+                    <div class="college-content">
+                        <div class="college-image">
+                            <img src="https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="College of Engineering Karunagappally">
+                        </div>
+                        <div class="college-info">
+                            <h4>College of Engineering Karunagappally</h4>
+                            <p class="course">Bachelor of Technology</p>
+                            <div class="subjects">
+                                <span class="subject-tag">Computer Science</span>
+                                <span class="subject-tag">Software Engineering</span>
+                                <span class="subject-tag">Data Structures</span>
+                                <span class="subject-tag">Web Development</span>
+                            </div>
+                            <p class="college-description">
+                                Pursuing excellence in computer science and engineering, 
+                                with a focus on modern web technologies and software development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Malavika Sunil. Crafted with 💜 and lots of ☕</p>
+            <div class="social-links">
+                <a href="https://github.com/Malavika-123-Sunil" target="_blank" class="social-link">GitHub</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
